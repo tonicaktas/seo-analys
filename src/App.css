@@ -1,0 +1,443 @@
+.text-center{
+  text-align: center;
+}
+
+.App-header {
+  background: url('/tb-header-bg.jpg');
+  background-size: cover;
+  height:300px;
+  max-width: 1920px;
+  color: white;
+  margin:0 auto;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+h3 {
+  text-align:center;
+}
+
+
+ h2 {
+  border-bottom:1px solid #dcacff;
+  padding-bottom:20px;
+  width:70%;
+  margin-left:15%;
+
+}
+
+
+.text-center h1 {
+  background: #000000;
+    margin-top: 0;
+    color: grey;
+    text-align: right;
+    font-size: 1.2em;
+    padding-right: 1%;
+    text-transform: uppercase;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+}
+
+.input-nr {
+  width:50%;
+}
+
+
+input[type='text']{
+  padding:4px;
+  width:250px;
+  height:75px;
+  background-color: black;
+  color:white;
+  font-size:80px;
+}
+
+input[type='text']::-webkit-input-placeholder {
+   color: grey;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 30px;
+   line-height: 50px;
+   position: relative;
+   top:-15px;
+}
+
+
+form {
+  display: flex;
+    justify-content: space-around;
+    margin-top:10%;
+}
+
+form div{
+  margin-bottom:15px;
+  line-height:2.2em;
+}
+
+textarea {
+  width:500px;
+  height:200px;
+  font-size:1.2em;
+}
+
+.checkbox-p {
+  display:flex;
+
+}
+
+input[type="checkbox" i] {
+  display:block;
+
+  margin-right:20px;
+
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #dcacff;
+  border-radius: 1px;
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: content-box ;
+  width: 30px;
+  height: 30px;
+  border-width: 0;
+  transition: all .3s linear;
+
+}
+
+input[type="checkbox"]:checked{
+  background-color: #dcacff;
+
+
+}
+
+input[type="checkbox"]:checked:after {
+ content: "✓";
+ font-size: 2.5em;
+ font-weight:100;
+ color:white;
+ line-height:35px;
+}
+
+input[type="number" i] {
+      margin-right: 3%;
+      width: 40px;
+      margin-bottom: 3%;
+      text-align: center;
+      padding: 0;
+      font-size: 1.3em;
+}
+
+input[type="submit" ]{
+    width: 100%;
+    border-radius: 0px;
+    height: 40px;
+    background: red;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    border: none;
+    background: #575b61;
+}
+
+.btn {
+    background-color: #575b61;
+    color:white;
+    border-radius: 0;
+    transition: .4s;
+}
+
+.btn:hover {
+  background-color: #dcacff;
+}
+
+
+
+
+/***********  Output *******************/
+
+
+table {
+  width:80%;
+  margin:0 auto;
+
+}
+
+th {
+      padding: 3% 0%;
+      font-weight: 100;
+      font-size: 1.5em;
+      text-align: left;
+}
+
+thead tr:first-child{
+  border-bottom:none;
+}
+
+.konvertering {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    padding: 3% 0%;
+
+}
+
+
+tr {
+  border-bottom:1px dotted black;
+}
+
+tr td:first-child{
+  width:80%;
+  text-align: left;
+
+}
+td {
+  padding:0 2px;
+  font-size:1.5em;
+  font-weight:200;
+}
+
+
+
+.red {
+  background-color: red;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin:0 auto;
+
+}
+
+.yellow {
+  background-color: yellow;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin:0 auto;
+
+}
+
+.green {
+  background-color: green;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin:0 auto;
+
+}
+
+.grey {
+  background-color: grey;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin:0 auto;
+
+}
+
+
+.total {
+  width:80%;
+  border-top:2px solid #cccccc;
+  border-bottom:2px solid #cccccc;
+  margin: 5% auto;
+  padding:1% 0;
+}
+
+.total h3 {
+  background-color: red;
+  padding:.7% 1% ;
+  width:200px;
+  font-weight:bold;
+  border-radius:7px;
+  margin:0 auto;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+
+
+h3 {
+  font-weight:bold;
+}
+
+.virek {
+  width:80%;
+  margin:0 auto;
+  border:1px solid #ccc;
+  padding:1%;
+  font-size: 1.5em;
+  border-radius:7px;
+  margin-top: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************** PDF ********************/
+
+
+
+@media print {
+.App-header {
+    /*background-color: #222 !important;*/
+    /*background-color: red !important;
+    height:200px;
+    -webkit-print-color-adjust: exact;
+    padding:0px;*/
+
+    background: url('/tb-header-bg.jpg') !important;
+    background-size: contain;
+    height:300px;
+    max-width: 1920px;
+    color: white;
+    margin:0 auto;
+
+
+}
+
+
+
+
+
+
+img {
+  width:795px;
+  height:200px;
+
+}
+
+.text-center h1{
+  display:none;
+}
+
+
+.betyg {
+  max-width: 595px;
+}
+.betyg table {
+  width:80%;
+  margin:0 auto;
+
+}
+
+
+.red {
+  background-color: red !important;
+  -webkit-print-color-adjust: exact;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin:0 auto;
+
+}
+
+.yellow {
+  background-color: yellow !important;
+  -webkit-print-color-adjust: exact;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin:0 auto;
+
+}
+
+.green {
+  background-color: green !important;
+  -webkit-print-color-adjust: exact;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin:0 auto;
+
+}
+
+table {
+  width:80%;
+  margin:0 auto;
+
+}
+
+th {
+      padding: 4% 0%;
+      font-weight: 100;
+      font-size: 1em;
+      text-align: left;
+}
+
+
+.konvertering {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1em;
+    padding: 3% 0%;
+
+}
+
+thead tr:first-child{
+  border-bottom:none;
+}
+
+tr {
+  border-bottom:1px dotted black;
+}
+
+tr td:first-child{
+  width:80%;
+  text-align: left;
+
+}
+td {
+  padding:0 2px;
+  font-size:.5em;
+  font-weight:200;
+}
+
+
+
+.virek {
+  font-size:.8em;
+}
+
+.obsen {
+  width:80%;
+  text-align:center;
+  font-size:.8em;
+  margin:0 auto;
+}
+
+
+.total h3 {
+  background-color: red !important;
+  padding:.7% 1% ;
+  width:200px;
+  font-weight:bold;
+  border-radius:7px;
+  margin:0 auto;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+}
